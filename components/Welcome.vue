@@ -97,7 +97,6 @@
               </div>
               <div class="project-links">
                 <a href="https://github.com/mattmiranda55/CardCraftBackEnd" class="project-link" target="_blank">GitHub</a>
-                <a href="#" class="project-link">Live Demo</a>
               </div>
             </div>
           </div>
@@ -116,7 +115,6 @@
               </div>
               <div class="project-links">
                 <a href="https://github.com/mattmiranda55/BGCBackEnd" class="project-link" target="_blank">GitHub</a>
-                <a href="#" class="project-link">Live Demo</a>
               </div>
             </div>
           </div>
@@ -136,7 +134,6 @@
               </div>
               <div class="project-links">
                 <a href="https://github.com/mattmiranda55/PDF_Question_Bot" class="project-link" target="_blank">GitHub</a>
-                <a href="#" class="project-link">Live Demo</a>
               </div>
             </div>
           </div>
@@ -154,11 +151,10 @@
         <div class="contact-content">
           <p class="contact-description">I'm always interested in new opportunities and exciting projects.</p>
           <div class="contact-info">
-            <a href="mailto:matt@example.com" class="contact-email">matt@example.com</a>
+            <a href="mailto:mattmiranda55@gmail.com" class="contact-email">mattmiranda55@gmail.com</a>
             <div class="social-links">
-              <a href="#" class="social-link">LinkedIn</a>
-              <a href="#" class="social-link">GitHub</a>
-              <a href="#" class="social-link">Twitter</a>
+              <a href="https://www.linkedin.com/in/matthew-miranda-b4b45a232/" target="_blank" class="social-link">LinkedIn</a>
+              <a href="https://github.com/mattmiranda55/" target="_blank" class="social-link">GitHub</a>
             </div>
           </div>
         </div>

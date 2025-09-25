@@ -88,54 +88,55 @@
               <div class="project-placeholder"></div>
             </div>
             <div class="project-content">
-              <h3 class="project-title">E-Commerce Platform</h3>
-              <p class="project-description">A modern e-commerce solution built with Vue.js and Node.js, featuring real-time inventory management.</p>
+              <h3 class="project-title">CardCraft</h3>
+              <p class="project-description">A full-stack capstone project featuring a card creation and management system with backend API integration and modern web technologies.</p>
               <div class="project-tech">
-                <span class="tech-tag">Vue.js</span>
-                <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">MongoDB</span>
-              </div>
-              <div class="project-links">
-                <a href="#" class="project-link">Live Demo</a>
-                <a href="#" class="project-link">GitHub</a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="project-card">
-            <div class="project-image">
-              <div class="project-placeholder"></div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Task Management App</h3>
-              <p class="project-description">A collaborative task management application with real-time updates and team collaboration features.</p>
-              <div class="project-tech">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">Express</span>
-                <span class="tech-tag">Socket.io</span>
-              </div>
-              <div class="project-links">
-                <a href="#" class="project-link">Live Demo</a>
-                <a href="#" class="project-link">GitHub</a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="project-card">
-            <div class="project-image">
-              <div class="project-placeholder"></div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Data Visualization Dashboard</h3>
-              <p class="project-description">An interactive dashboard for data analysis with custom charts and real-time data processing.</p>
-              <div class="project-tech">
-                <span class="tech-tag">D3.js</span>
                 <span class="tech-tag">Python</span>
-                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Backend API</span>
+                <span class="tech-tag">Full Stack</span>
               </div>
               <div class="project-links">
+                <a href="https://github.com/mattmiranda55/CardCraftBackEnd" class="project-link" target="_blank">GitHub</a>
                 <a href="#" class="project-link">Live Demo</a>
-                <a href="#" class="project-link">GitHub</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder"></div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">BGC Backend</h3>
+              <p class="project-description">A robust backend system built with Python, featuring advanced data processing capabilities and scalable architecture for modern applications.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Backend</span>
+                <span class="tech-tag">API</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/mattmiranda55/BGCBackEnd" class="project-link" target="_blank">GitHub</a>
+                <a href="#" class="project-link">Live Demo</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder"></div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">PDF Question Bot</h3>
+              <p class="project-description">An intelligent LLM bot built with IBM watsonx.ai and Streamlit for easy deployment, capable of answering questions from PDF documents.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">LLM</span>
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">IBM Watson</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/mattmiranda55/PDF_Question_Bot" class="project-link" target="_blank">GitHub</a>
+                <a href="#" class="project-link">Live Demo</a>
               </div>
             </div>
           </div>

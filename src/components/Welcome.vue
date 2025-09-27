@@ -151,10 +151,19 @@
         <div class="contact-content">
           <p class="contact-description">I'm always interested in new opportunities and exciting projects.</p>
           <div class="contact-info">
-            <a href="mailto:mattmiranda55@gmail.com" class="contact-email">mattmiranda55@gmail.com</a>
+            <div>
+              <font-awesome-icon icon="fa-solid fa-envelope" />
+              <a href="mailto:mattmiranda55@gmail.com" class="contact-email">&nbsp mattmiranda55@gmail.com</a>
+            </div>
             <div class="social-links">
-              <a href="https://www.linkedin.com/in/matthew-miranda-b4b45a232/" target="_blank" class="social-link">LinkedIn</a>
-              <a href="https://github.com/mattmiranda55/" target="_blank" class="social-link">GitHub</a>
+              <div>
+                <font-awesome-icon icon="fa-brands fa-linkedin" />
+                <a href="https://www.linkedin.com/in/matthew-miranda-b4b45a232/" class="social-link" target="_blank">LinkedIn</a>
+              </div>
+              <div>
+                <font-awesome-icon icon="fa-brands fa-github" />
+                <a href="https://github.com/mattmiranda55" class="social-link" target="_blank">GitHub</a>
+              </div>
             </div>
           </div>
         </div>
@@ -162,6 +171,11 @@
     </section>
   </div>
 </template>
+
+<script setup>
+// Vue 3 Composition API - no imports needed for this component
+// All functionality is handled through CSS and HTML
+</script>
 
 <style scoped>
 /* Reset and Base Styles */
@@ -546,6 +560,13 @@ section {
   gap: 2rem;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
+}
+
+.social-links > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .social-link {

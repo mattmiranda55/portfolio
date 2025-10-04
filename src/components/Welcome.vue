@@ -14,8 +14,8 @@
     <section class="hero">
       <div class="hero-content">
         <div class="hero-greeting">Hi, I'm Matt</div>
-        <h1 class="hero-title">Full Stack Developer</h1>
-        <p class="hero-description">I create elegant digital experiences through thoughtful design and clean code.</p>
+        <h1 class="hero-title">AI-Powered Full Stack Developer</h1>
+        <p class="hero-description">I build intelligent applications that leverage cutting-edge AI technologies to solve complex real-world problems.</p>
         <div class="hero-actions">
           <a href="#work" class="btn-primary">View My Work</a>
           <a href="#contact" class="btn-secondary">Get In Touch</a>
@@ -31,7 +31,7 @@
           <div class="section-line"></div>
         </div>
         <div class="about-content">
-          <p class="about-text">I'm a passionate developer with expertise in modern web technologies. I love creating beautiful, functional applications that solve real-world problems and delight users.</p>
+          <p class="about-text">I'm a Computer Science graduate from East Carolina University specializing in AI-powered full-stack development. With expertise in OpenAI API integration, machine learning frameworks like LangChain and Apache Spark, and robust backend systems using Django and PostgreSQL, I create intelligent applications that transform how users interact with data. From AI-driven flashcard generators to document analysis systems, I combine cutting-edge artificial intelligence with scalable web architecture to build solutions that are both innovative and practical.</p>
         </div>
       </div>
     </section>
@@ -44,31 +44,48 @@
           <div class="section-line"></div>
         </div>
         <div class="skills-grid">
+          <div class="skill-category ai-featured">
+            <h3 class="skill-category-title">AI & Machine Learning</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">OpenAI API</span>
+              <span class="skill-tag">IBM watsonx.ai</span>
+              <span class="skill-tag">LangChain</span>
+              <span class="skill-tag">Apache Spark</span>
+              <span class="skill-tag">Scikit-learn</span>
+              <span class="skill-tag">RAG</span>
+            </div>
+          </div>
           <div class="skill-category">
-            <h3 class="skill-category-title">Frontend</h3>
+            <h3 class="skill-category-title">Backend Development</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">JWT Auth</span>
+              <span class="skill-tag">AWS S3</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="skill-category-title">Frontend & Web</h3>
             <div class="skill-tags">
               <span class="skill-tag">Vue.js</span>
-              <span class="skill-tag">React</span>
-              <span class="skill-tag">TypeScript</span>
-              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">HTML/CSS</span>
+              <span class="skill-tag">Streamlit</span>
+              <span class="skill-tag">Chrome Extensions</span>
+              <span class="skill-tag">Responsive Design</span>
             </div>
           </div>
           <div class="skill-category">
-            <h3 class="skill-category-title">Backend</h3>
+            <h3 class="skill-category-title">Data & Analytics</h3>
             <div class="skill-tags">
-              <span class="skill-tag">Node.js</span>
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">PostgreSQL</span>
-              <span class="skill-tag">MongoDB</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3 class="skill-category-title">Tools</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Git</span>
-              <span class="skill-tag">Docker</span>
-              <span class="skill-tag">AWS</span>
-              <span class="skill-tag">Figma</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">Jupyter</span>
+              <span class="skill-tag">Vector Databases</span>
+              <span class="skill-tag">PDF Processing</span>
+              <span class="skill-tag">Web Scraping</span>
+              <span class="skill-tag">Data Visualization</span>
             </div>
           </div>
         </div>
@@ -89,11 +106,14 @@
             </div>
             <div class="project-content">
               <h3 class="project-title">CardCraft</h3>
-              <p class="project-description">A full-stack capstone project featuring a card creation and management system with backend API integration and modern web technologies.</p>
+              <p class="project-description">An AI-powered Django flashcard management system developed as a capstone project. Features intelligent PDF processing with OpenAI GPT-3.5-turbo integration that automatically extracts text and generates comprehensive question-answer pairs from uploaded documents. Includes user authentication, JWT tokens, automated HTML-to-PDF conversion, dynamic card set creation, and RESTful API endpoints for seamless AI-driven educational content generation.</p>
               <div class="project-tech">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Backend API</span>
-                <span class="tech-tag">Full Stack</span>
+                <span class="tech-tag">OpenAI API</span>
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">GPT-3.5</span>
+                <span class="tech-tag">PDF Processing</span>
+                <span class="tech-tag">AI Generation</span>
+                <span class="tech-tag">JWT Auth</span>
               </div>
               <div class="project-links">
                 <a href="https://github.com/mattmiranda55/CardCraftBackEnd" class="project-link" target="_blank">GitHub</a>
@@ -106,12 +126,11 @@
               <div class="project-placeholder"></div>
             </div>
             <div class="project-content">
-              <h3 class="project-title">BGC Backend</h3>
-              <p class="project-description">A robust backend system built with Python, featuring advanced data processing capabilities and scalable architecture for modern applications.</p>
+              <h3 class="project-title">Bone Graft Consortium Backend</h3>
+              <p class="project-description">A comprehensive Django REST API serving as the backend for the Bone Graft Consortium database - a non-biased, 501(c)(3) nonprofit platform. Features complete graft management with categorization, regulatory compliance tracking, user authentication with JWT tokens, credit-based posting system, PayPal payment integration, and AWS S3 file storage for images and documents. Includes admin validation workflows and comprehensive CRUD operations for bone graft products.</p>
               <div class="project-tech">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Backend</span>
-                <span class="tech-tag">API</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Django</span>
               </div>
               <div class="project-links">
                 <a href="https://github.com/mattmiranda55/BGCBackEnd" class="project-link" target="_blank">GitHub</a>
@@ -121,16 +140,18 @@
           
           <div class="project-card">
             <div class="project-image">
-              <div class="project-placeholder"></div>
+              <img src="https://lava.mattmiranda.dev/portfolio/images/ai.webp" />
             </div>
             <div class="project-content">
               <h3 class="project-title">PDF Question Bot</h3>
-              <p class="project-description">An intelligent LLM bot built with IBM watsonx.ai and Streamlit for easy deployment, capable of answering questions from PDF documents.</p>
+              <p class="project-description">An intelligent document analysis application leveraging IBM watsonx.ai and LangChain for PDF processing. Features vector embeddings with HuggingFace transformers, document chunking and indexing, retrieval-augmented generation (RAG), and an interactive Streamlit interface with chat functionality for natural language querying of PDF content.</p>
               <div class="project-tech">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">LLM</span>
+                <span class="tech-tag">IBM watsonx.ai</span>
+                <span class="tech-tag">LangChain</span>
                 <span class="tech-tag">Streamlit</span>
-                <span class="tech-tag">IBM Watson</span>
+                <span class="tech-tag">RAG</span>
+                <span class="tech-tag">Vector DB</span>
+                <span class="tech-tag">NLP</span>
               </div>
               <div class="project-links">
                 <a href="https://github.com/mattmiranda55/PDF_Question_Bot" class="project-link" target="_blank">GitHub</a>
@@ -238,7 +259,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: #8b9a7a;
+  background: #663399;
   transition: width 0.3s ease;
 }
 
@@ -260,10 +281,12 @@
 
 .hero-greeting {
   font-size: 1.125rem;
-  color: #8b9a7a;
+  color: #663399;
   margin-bottom: 0.5rem;
   font-weight: 500;
   letter-spacing: 0.05em;
+  text-transform: uppercase;
+  position: relative;
 }
 
 .hero-title {
@@ -273,6 +296,10 @@
   margin-bottom: 1.5rem;
   letter-spacing: -0.02em;
   line-height: 1.1;
+  background: linear-gradient(135deg, #2c3e50 0%, #663399 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .hero-description {
@@ -302,9 +329,9 @@
 }
 
 .btn-primary {
-  background: #8b9a7a;
+  background: #663399;
   color: white;
-  border: 2px solid #8b9a7a;
+  border: 2px solid #663399;
 }
 
 .btn-primary:hover {
@@ -315,12 +342,12 @@
 
 .btn-secondary {
   background: transparent;
-  color: #8b9a7a;
-  border: 2px solid #8b9a7a;
+  color: #663399;
+  border: 2px solid #663399;
 }
 
 .btn-secondary:hover {
-  background: #8b9a7a;
+  background: #663399;
   color: white;
   transform: translateY(-2px);
 }
@@ -353,7 +380,7 @@ section {
 .section-line {
   width: 60px;
   height: 3px;
-  background: #8b9a7a;
+  background: #663399;
   margin: 0 auto;
   border-radius: 2px;
 }
@@ -388,10 +415,24 @@ section {
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border-top: 4px solid #663399;
 }
 
 .skill-category:hover {
   transform: translateY(-4px);
+}
+
+.skill-category.ai-featured {
+  background: linear-gradient(135deg, rgba(102, 51, 153, 0.05) 0%, rgba(138, 79, 191, 0.05) 100%);
+  border-top: 4px solid #663399;
+  box-shadow: 0 8px 32px rgba(102, 51, 153, 0.15);
+}
+
+.skill-category.ai-featured:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(102, 51, 153, 0.2);
 }
 
 .skill-category-title {
@@ -411,7 +452,7 @@ section {
 
 .skill-tag {
   background: #f8f9fa;
-  color: #8b9a7a;
+  color: #663399;
   padding: 0.5rem 1rem;
   border-radius: 25px;
   font-size: 0.875rem;
@@ -421,7 +462,7 @@ section {
 }
 
 .skill-tag:hover {
-  background: #8b9a7a;
+  background: #663399;
   color: white;
   transform: translateY(-2px);
 }
@@ -455,9 +496,16 @@ section {
 
 .project-image {
   height: 200px;
-  background: linear-gradient(135deg, #8b9a7a 0%, #a8b896 100%);
+  background: linear-gradient(135deg, #663399 0%, #8a4fbf 100%);
   position: relative;
   overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .project-placeholder {
@@ -496,7 +544,7 @@ section {
 }
 
 .tech-tag {
-  background: #8b9a7a;
+  background: #663399;
   color: white;
   padding: 0.25rem 0.75rem;
   border-radius: 12px;
@@ -510,7 +558,7 @@ section {
 }
 
 .project-link {
-  color: #8b9a7a;
+  color: #663399;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.875rem;
@@ -544,7 +592,7 @@ section {
 .contact-email {
   display: inline-block;
   font-size: 1.25rem;
-  color: #8b9a7a;
+  color: #663399;
   text-decoration: none;
   font-weight: 600;
   margin-bottom: 2rem;
@@ -577,7 +625,7 @@ section {
 }
 
 .social-link:hover {
-  color: #8b9a7a;
+  color: #663399;
 }
 
 /* Animations */

@@ -1,5 +1,5 @@
-// Cloudflare Pages Function for API easter egg (HTTPS fallback)
-// The _middleware.js handles most cases, this is a backup for HTTPS direct requests
+// Cloudflare Pages Middleware to handle HTTP requests before redirect
+// This ensures curl mattmiranda.dev works without -L flag
 
 export async function onRequest(context) {
   const { request, next } = context;
@@ -32,6 +32,7 @@ export async function onRequest(context) {
     // Check for programming language HTTP clients
     /(python|node|ruby|go|rust|java|php|dotnet|powershell)/i.test(userAgent);
   
+  // If it's an API client, return JSON regardless of protocol (HTTP or HTTPS)
   if (isApiClient) {
     // Return Matt's profile data as JSON
     const profileData = {
@@ -41,9 +42,8 @@ export async function onRequest(context) {
         email: "mattmiranda55@gmail.com",
         linkedin: "https://www.linkedin.com/in/matthew-miranda-b4b45a232/",
         github: "https://github.com/mattmiranda55",
-        website: url.origin
-      },
-      
+        website: "mattmiranda.dev" // Always use HTTPS for website URL
+      }
     };
     
     return new Response(JSON.stringify(profileData, null, 2), {
@@ -55,6 +55,6 @@ export async function onRequest(context) {
     });
   }
   
-  // For browsers and other clients, serve the normal site
+  // For browsers, let Cloudflare handle the HTTP->HTTPS redirect naturally
   return next();
 }

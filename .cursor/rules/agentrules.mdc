@@ -1,0 +1,8 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+Do not create README files to document changes.
+
+Do not run any commands to test code other than linters and typescript error checking. No building and no running dev servers.

@@ -1,0 +1,6 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+When running terminal commands, always use the default OS terminal (e.g., bash, zsh, or sh) instead of Powershell, unless the system is detected to be Windows, in which case Powershell may be used if it is the default.

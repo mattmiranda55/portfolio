@@ -6,19 +6,33 @@
       <div class="nav-links">
         <a href="#about" class="nav-link">About</a>
         <a href="#work" class="nav-link">Work</a>
+        <a href="#api" class="nav-link">API</a>
         <a href="#contact" class="nav-link">Contact</a>
       </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero">
-      <div class="hero-content">
-        <div class="hero-greeting">Hi, I'm Matt</div>
-        <h1 class="hero-title">AI-Powered Full Stack Developer</h1>
-        <p class="hero-description">I build intelligent applications that leverage cutting-edge AI technologies to solve complex real-world problems.</p>
-        <div class="hero-actions">
-          <a href="#work" class="btn-primary">View My Work</a>
-          <a href="#contact" class="btn-secondary">Get In Touch</a>
+      <div class="hero-layout">
+        <!-- Terminal Section -->
+        <div class="terminal-section">
+          <Terminal 
+            command="curl mattmiranda.dev"
+            prompt="visitor@mattmiranda.dev:~$"
+            :typing-speed="80"
+            :auto-start="true"
+          />
+        </div>
+
+        <!-- Main Content -->
+        <div class="hero-content">
+          <div class="hero-greeting">HI, I'M MATT</div>
+          <h1 class="hero-title">AI-Powered Full Stack Developer</h1>
+          <p class="hero-description">I build intelligent applications that leverage cutting-edge AI technologies to solve complex real-world problems.</p>
+          <div class="hero-actions">
+            <a href="#work" class="btn-primary">View My Work</a>
+            <a href="#contact" class="btn-secondary">Get In Touch</a>
+          </div>
         </div>
       </div>
     </section>
@@ -194,8 +208,7 @@
 </template>
 
 <script setup>
-// Vue 3 Composition API - no imports needed for this component
-// All functionality is handled through CSS and HTML
+import Terminal from './Terminal.vue'
 </script>
 
 <style scoped>
@@ -269,28 +282,47 @@
 
 /* Hero Section */
 .hero {
-  padding: 8rem 2rem 6rem;
-  text-align: center;
-  max-width: 800px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  background: #fafafa;
+}
+
+.hero-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: 1400px;
   margin: 0 auto;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+
+.terminal-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-content {
+  text-align: center;
+  padding: 2rem;
   animation: fadeInUp 0.8s ease-out;
 }
 
 .hero-greeting {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #663399;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  position: relative;
 }
 
 .hero-title {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2rem, 4vw, 3.5rem);
   font-weight: 700;
   color: #2c3e50;
   margin-bottom: 1.5rem;
@@ -303,12 +335,10 @@
 }
 
 .hero-description {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   color: #6c757d;
-  margin-bottom: 3rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 2rem;
+  line-height: 1.6;
 }
 
 .hero-actions {
@@ -317,6 +347,7 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
 
 .btn-primary, .btn-secondary {
   padding: 0.875rem 2rem;
@@ -641,6 +672,16 @@ section {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-layout {
+    gap: 2rem;
+  }
+  
+  .hero-content {
+    padding: 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .nav {
     padding: 1rem;
@@ -651,7 +692,23 @@ section {
   }
   
   .hero {
-    padding: 6rem 1rem 4rem;
+    padding: 1rem;
+    min-height: auto;
+  }
+  
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .terminal-section {
+    order: 2;
+  }
+  
+  .hero-content {
+    order: 1;
+    padding: 1.5rem;
   }
   
   .hero-actions {

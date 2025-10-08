@@ -1,0 +1,21 @@
+# Cloudflare Pages configuration
+name = "portfolio"
+compatibility_date = "2024-01-01"
+
+# Pages configuration
+pages_build_output_dir = "dist"
+
+# Environment variables (set these in Cloudflare dashboard)
+# [env.production]
+# vars = { }
+
+# KV Namespaces (optional - for storing data)
+# [[kv_namespaces]]
+# binding = "PORTFOLIO_KV"
+# id = "your-kv-namespace-id"
+
+# D1 Databases (optional - for SQL storage)
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "portfolio-db"
+# database_id = "your-database-id"

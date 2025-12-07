@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/* East Carolina University Purple: #592A8A */
+@theme {
+  --color-ecu-purple: #592A8A;
+  --color-ecu-purple-dark: #4a2373;
+  --color-ecu-purple-light: #7a4ba8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: white;
+  color: #1a1a1a;
+}

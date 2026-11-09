@@ -18,6 +18,7 @@
     "@tailwindcss/vite": "^4.3.3",
     "primevue": "^5.0.4",
     "tailwindcss": "^4.3.3",
+    "typewriter-effect": "^3.3.0",
     "vue": "^3.5.42",
     "vue-router": "^5.3.1"
   },

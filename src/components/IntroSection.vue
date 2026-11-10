@@ -8,9 +8,15 @@
         <!-- min-h keeps the layout from jumping while the line is still being typed. -->
         <h1
           class="min-h-[1.2em] text-6xl font-bold tracking-tight md:text-7xl lg:text-8xl"
-          :aria-label="greeting"
         >
-          <span ref="typed" aria-hidden="true" />
+          <DecryptedText
+            text="Hi, I'm Matt!"
+            animate-on="view"
+            reveal-direction="center"
+            :speed="100"
+            :max-iterations="10"
+            :sequential="false"
+          />
         </h1>
         <p class="mt-4 text-lg text-white/70 md:text-xl">Full Stack Software Developer</p>
       </div>
@@ -51,16 +57,5 @@
 }
 </style>
 <script setup lang="ts">
-import Typewriter from 'typewriter-effect/dist/core'
-import { onMounted, useTemplateRef } from 'vue'
-
-const greeting = "Hi, I'm Matt!"
-const typed = useTemplateRef<HTMLElement>('typed')
-
-onMounted(() => {
-  if (!typed.value) return
-  // typeString() only types. Text is removed only if you chain deleteAll() or
-  // use the `strings` + `autoStart` options, which is what the Vue wrapper does.
-  new Typewriter(typed.value, { delay: 75 }).typeString(greeting).start()
-})
+import DecryptedText from './DecryptedText.vue';
 </script>

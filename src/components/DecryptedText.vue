@@ -208,7 +208,7 @@ function startInterval() {
         }
       } else {
         if (pointerRef.value < orderRef.value.length) {
-          const idxToRemove = orderRef.value[pointerRef.value++];
+          const idxToRemove = orderRef.value[pointerRef.value++]!;
           const newRevealed = new Set(revealedIndices.value);
           newRevealed.delete(idxToRemove);
           revealedIndices.value = newRevealed;

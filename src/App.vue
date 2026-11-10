@@ -96,6 +96,8 @@ const projects = [
       </p>
     </StorySection>
 
+    <hr>
+
     <StorySection id="work" heading="Work history">
       <article v-for="w in work" :key="`${w.company}-${w.role}-${w.start}`" class="rounded-2xl border border-white/10 p-6">
         <h3 class="text-xl font-semibold text-white">{{ w.role }} · {{w.company}}</h3>
@@ -103,7 +105,9 @@ const projects = [
         <p class="mt-3">{{ w.description }}</p>
       </article>
     </StorySection>
-
+    
+    <hr>
+    
     <StorySection id="projects" heading="Projects">
       <article v-for="p in projects" :key="p.name" class="rounded-2xl border border-white/10 p-6">
         <div class="mb-4 grid aspect-video place-items-center rounded-xl border border-dashed border-white/20 text-sm text-white/40">
@@ -114,7 +118,9 @@ const projects = [
         <p class="mt-2">{{ p.description }}</p>
       </article>
     </StorySection>
-
+    
+    <hr>
+    
     <StorySection id="contact" heading="Contact">
       <p>Have a role, a project or a question? Send me a message.</p>
 

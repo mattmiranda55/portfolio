@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+/* Site colours: `night` is the page background, `ember` the net drawn over it. */
+@theme {
+  --color-night: #140c50;
+  --color-ember: #fc0000;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;

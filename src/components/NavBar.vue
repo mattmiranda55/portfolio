@@ -9,7 +9,7 @@ defineEmits<{ navigate: [index: number] }>()
   <!-- Content scrolls underneath, so the bar gets a backdrop once you leave the intro. -->
   <header
     class="fixed inset-x-0 top-0 z-50 flex items-center justify-between px-6 py-5 text-sm transition-colors duration-300 md:px-12 md:text-base"
-    :class="active === 0 ? 'bg-transparent' : 'bg-black/70 backdrop-blur'"
+    :class="active === 0 ? 'bg-transparent' : 'bg-night/70 backdrop-blur'"
   >
     <!-- Home link: hidden on the intro, where the big greeting already says it. -->
     <button

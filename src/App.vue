@@ -2,6 +2,7 @@
 import ContactForm from './components/ContactForm.vue'
 import IntroSection from './components/IntroSection.vue'
 import NavBar from './components/NavBar.vue'
+import NetBackground from './components/NetBackground.vue'
 import StorySection from './components/StorySection.vue'
 import { useActiveSection } from './composables/useActiveSection'
 import { sections } from './sections'
@@ -62,6 +63,7 @@ const projects = [
 </script>
 
 <template>
+  <NetBackground />
   <NavBar :active="active" @navigate="go" />
 
   <main>

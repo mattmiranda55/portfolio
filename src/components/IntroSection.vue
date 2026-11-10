@@ -12,7 +12,7 @@
         >
           <span ref="typed" aria-hidden="true" />
         </h1>
-        <p class="mt-4 text-lg text-white/70 md:text-xl">One line about what you do goes here.</p>
+        <p class="mt-4 text-lg text-white/70 md:text-xl">Full Stack Software Developer</p>
       </div>
 
       <!-- Placeholder frame: swap this div for an <img class="... object-cover"> with the same size classes. -->

@@ -2,7 +2,7 @@
 import ContactForm from './components/ContactForm.vue'
 import IntroSection from './components/IntroSection.vue'
 import NavBar from './components/NavBar.vue'
-import NetBackground from './components/NetBackground.vue'
+import PixelBlast from './components/PixelBlast.vue'
 import StorySection from './components/StorySection.vue'
 import { useActiveSection } from './composables/useActiveSection'
 import { sections } from './sections'
@@ -63,7 +63,23 @@ const projects = [
 </script>
 
 <template>
-  <NetBackground />
+  <div aria-hidden="true" class="pointer-events-none fixed inset-0 -z-10 bg-night">
+    <PixelBlast
+      variant="square"
+      :pixel-size="4"
+      color="#B497CF"
+      :pattern-scale="2"
+      :pattern-density="1"
+      :pixel-size-jitter="0"
+      enable-ripples
+      :ripple-intensity-scale="1.5"
+      :auto-ripple-interval="2500"
+      :drift="[0.04, 0.02]"
+      :liquid="false"
+      :speed="0.8"
+      :edge-fade="0.25"
+    />
+  </div>
   <NavBar :active="active" @navigate="go" />
 
   <main>

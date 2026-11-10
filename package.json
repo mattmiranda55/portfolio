@@ -14,10 +14,15 @@
     "lint:eslint": "eslint . --fix --cache"
   },
   "dependencies": {
+    "@hugeicons/core-free-icons": "^4.3.3",
+    "@hugeicons/vue": "^1.0.8",
     "@primeuix/themes": "^3.1.0",
     "@tailwindcss/vite": "^4.3.3",
+    "motion-v": "^1.10.2",
+    "postprocessing": "^6.39.6",
     "primevue": "^5.0.4",
     "tailwindcss": "^4.3.3",
+    "three": "^0.187.0",
     "typewriter-effect": "^3.3.0",
     "vue": "^3.5.42",
     "vue-router": "^5.3.1"
@@ -25,6 +30,7 @@
   "devDependencies": {
     "@tsconfig/node24": "^24.0.5",
     "@types/node": "^24.13.4",
+    "@types/three": "^0.187.0",
     "@vitejs/plugin-vue": "^6.0.8",
     "@vue/eslint-config-typescript": "^14.9.0",
     "@vue/tsconfig": "^0.9.1",

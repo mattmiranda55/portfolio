@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { reactive, ref } from 'vue'
+import { reactive, ref, useTemplateRef } from 'vue'
+import SlingButton from './SlingButton.vue'
 
 // Web3Forms emails each submission to the address the access key was created for.
 // The key is meant to be public (it ships in the page), so it is safe in the bundle.
@@ -12,6 +13,12 @@ type Status = 'idle' | 'sending' | 'sent' | 'error'
 const status = ref<Status>('idle')
 const errorMessage = ref('')
 const form = reactive({ name: '', email: '', message: '', botcheck: false })
+const formEl = useTemplateRef('formEl')
+
+// requestSubmit, not submit(): it runs the required-field checks first.
+function send() {
+  formEl.value!.requestSubmit()
+}
 
 async function submit() {
   if (status.value === 'sending') return
@@ -70,7 +77,7 @@ async function submit() {
     </button>
   </div>
 
-  <form v-else class="space-y-5" @submit.prevent="submit">
+  <form v-else ref="formEl" class="space-y-5" @submit.prevent="submit">
     <div class="grid gap-5 md:grid-cols-2">
       <label class="block">
         <span class="mb-2 block text-sm text-white/60">Name</span>
@@ -90,14 +97,17 @@ async function submit() {
     <!-- Honeypot field, hidden from people and assistive tech. -->
     <input v-model="form.botcheck" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
 
-    <div class="flex flex-wrap items-center gap-4">
-      <button
-        type="submit"
-        class="cursor-pointer rounded-full bg-white px-6 py-3 text-base font-semibold text-black transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
+    <div class="flex flex-wrap items-center gap-x-6 gap-y-4 pt-2">
+      <SlingButton
+        aria-label="Send message"
+        well-color="rgba(255, 255, 255, 0.1)"
+        band-color="rgba(255, 255, 255, 0.35)"
         :disabled="status === 'sending'"
-      >
-        {{ status === 'sending' ? 'Sending…' : 'Send message' }}
-      </button>
+        @send="send"
+      />
+      <p class="text-base text-white/60">
+        {{ status === 'sending' ? 'Sending…' : 'Drag the arrow away and let go to launch your message, or just tap it.' }}
+      </p>
       <p v-if="status === 'error'" role="alert" class="text-base text-red-400">{{ errorMessage }}</p>
     </div>
   </form>
